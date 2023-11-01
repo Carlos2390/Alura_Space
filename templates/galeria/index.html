@@ -22,7 +22,7 @@
                         <ul class="cards__lista">
                             {% if cards %}
                             {% for fotografia in cards %}
-                            <li class="card">
+                            <li class="card" style="background-color: #041833;">
                                 <a href="{% url "imagem" fotografia.id %}">
                                 {% if fotografia.foto == "" or fotografia.foto == null %}
                                     {% if fotografia.image_url == "" or fotografia.image_url == null %}
